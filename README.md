@@ -14,7 +14,7 @@ CrowdStrike RTR(Real Time Response) allows analyst to run custom powershell scri
    runscript -CloudFile= “ CS_PacketCap” CommandLine= “x”
        (x – the resultant file size you want to capture)
 
-4. The maximal allowed file size has been hard-coded to 50% of local drive free space. The script will error out and print out the maximal allowed file size if user specifies bigger size than that.
+4. The maximal allowed file size has been hard-coded to 50% of local drive free space. The script will quite and print out the maximal allowed file size if user specifies bigger size than that.
 5. The default output directory has been set to C:\windows\temp\_CS_PacketCap.
 6. The resultant data(zip file) can be uploaded to CrowdStrike Cloud from output location using “get” command.
 7. Remember to delete output data after successful uploading.
